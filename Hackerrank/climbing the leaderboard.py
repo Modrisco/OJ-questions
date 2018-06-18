@@ -7,6 +7,7 @@ import re
 import sys
 
 # Complete the climbingLeaderboard function below.
+# Double pointers
 def climbingLeaderboard(scores, alice):
     rank = []
     scores_set = sorted(list(set(scores)))
