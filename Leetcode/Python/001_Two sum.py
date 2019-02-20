@@ -1,5 +1,5 @@
 class Solution:
-    def twoSum(self, nums, target):
+    def twoSum_hashtable(self, nums, target):
         """
         :type nums: List[int]
         :type target: int
@@ -13,4 +13,17 @@ class Solution:
         for index, value in enumerate(nums):
             if target - value in dict and dict[target - value] != index:
                 return (index, dict[target - value])
-        
+
+    def twoSum_bruteforce(self, nums, target):
+        """
+        :type nums: List[int]
+        :type target: int
+        :rtype: List[int]
+        """
+        answer = []
+        for i in range(len(nums)):
+            for j in range(i + 1, len(nums)):
+                if nums[i] + nums[j] == target:
+                    answer.append(i)
+                    answer.append(j)
+        return answer
