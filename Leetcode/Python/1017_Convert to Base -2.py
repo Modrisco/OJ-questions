@@ -8,4 +8,3 @@ class Solution:
             N = -(N >> 1)
             result += str(abs(remainder))
         return result[::-1]
-
