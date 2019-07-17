@@ -4,7 +4,7 @@ class Solution(object):
         :type s: str
         :rtype: int
         """
-        brute force will execute runtime error for the last testcase!
+        # brute force will execute runtime error for the last testcase!
         if not s:
             return 0
         longest = 1
